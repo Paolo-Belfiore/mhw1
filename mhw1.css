@@ -1,0 +1,325 @@
+
+
+/*Abilità del cursore per cliccare sul link*/
+
+a{
+    cursor : pointer;
+}
+
+
+header{
+
+    /*Dettagli immagine di sfondo*/
+    background-image: url(https://images5.alphacoders.com/107/1078986.jpg);
+    background-size: cover;
+    background-position: center;
+
+    height: 300px;
+
+    position : relative;
+
+    display : flex;
+    flex-direction: column;
+    align-items : center;
+    justify-content: center; 
+
+}
+
+#overlay{
+
+    background-color: rgba(0, 0, 0, 0.3);
+
+    position: absolute;
+    top : 0;
+    bottom: 0;
+    height: 100%;
+    width : 100%;
+    z-index: 0;
+}
+
+
+
+header nav {
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+#logo{
+
+    color : lightgrey;
+    font-family: 'Pangolin', cursive ;
+    font-size: 40px;
+    letter-spacing: 3px;
+
+    margin-left: 10px;
+}
+/*Media Query*/
+@media(max-width : 600px){
+    #logo{
+        font-size : 30px;
+    }
+}
+
+
+
+#links{
+
+    margin-right: 10px;
+
+}
+
+
+
+#links a{
+
+    padding : 4px;
+    margin : 4px;
+
+    text-align : center;
+    font-family: "Hind Madurai", sans-serif;
+    font-size: 18px;
+    font-weight : bold;
+    letter-spacing : 1px;
+    color : lightgrey;
+
+}
+
+/* Media Query*/
+@media(max-width : 600px){
+    #links a{
+        font-size : 12px;
+    }
+}
+@media(max-width : 500px){
+    #links a{
+        display: none;
+    }
+}
+
+
+
+#links a.button{
+
+    padding : 4px;
+    margin : 4px;
+    border-radius : 100px;
+    background-color: lightgrey;
+    color : black;
+
+}
+
+
+#links a.button:hover{
+
+    background-color: lightgrey;
+    color : maroon;
+
+}
+
+
+
+header nav a.button{
+
+    text-transform: uppercase;
+
+}
+
+
+
+header h1, a.button{
+
+    text-align: center;
+    margin : 20px;
+    z-index: 1;
+}
+
+
+header h1 strong{
+
+    color : whitesmoke;
+    font-family: "Dancing Script", cursive;
+    letter-spacing: 2px;
+
+}
+
+
+
+h1 a.button{
+
+    padding : 4px;
+    border-radius: 100px;
+
+    background-color: maroon;
+
+    color : white;
+    font-family: "Hind Madurai", sans-serif;
+    font-weight: normal;
+    font-size: 16px;
+    letter-spacing: 2px;
+
+}
+
+
+
+h1 a.button:hover{
+
+    background-color: white;
+    color:maroon;
+
+}
+/*Media Query*/
+@media(max-width : 600px){
+    header h1, a.button{
+        font-size: 30px;
+    }
+}
+
+
+h3{
+
+    align-self: flex-start;
+
+    margin-left: 10px;
+
+    color : lightgrey;
+    font-size: 12px;
+    font-family: "Baloo Tammudu 2", cursive;
+
+    z-index: 1;
+}
+/*Media Query*/
+@media(max-width : 500px){
+    h3{
+        font-size: 8px;
+    }
+}
+
+
+
+section{
+
+    margin: 100px 125px;
+
+    text-align: center;
+
+}
+@media(max-width : 500px){
+    section{
+        margin : 40px 60px;
+    }
+}
+
+
+
+section p.maincaption, p.secondcaption{
+
+    height: auto;
+    width:auto;
+
+    font-size: 25px;
+    font-weight: bold;
+    font-family: "Slabo 27px", serif;
+
+}
+@media(max-width : 500px){
+    section p.maincaption, p.secondcaption{
+        display:inline-block;
+        font-size: 15px;
+    }
+}
+
+section div{
+    margin:0px;
+}
+
+
+#esempi{
+
+    display : flex;
+    flex-direction: column;
+    justify-content: space-around;
+
+}
+
+
+
+#esempi div{
+
+    width : calc(50% -20px);
+    background-color: rgb(15, 15, 15);
+    border: 5px dotted rgb(253, 217, 11);
+    margin:5px;
+
+}
+
+
+
+#esempi img{
+
+    height : 50%;
+    width : 60%;
+
+}
+
+
+#esempi p{
+
+    background-image: unset;
+    color  : whitesmoke;
+    font-weight : normal;
+    font-size: 25px;
+    font-family: "Nanum Myeongjo", serif;
+    letter-spacing : 2px;
+
+}
+@media(max-width:500px){
+    #esempi p{
+        display: inline-block;
+        font-size : 15px;
+    }
+}
+
+
+
+footer{
+
+    background-color : rgb(15, 15, 15);
+    
+    padding : 80px;
+    text-align : center;
+
+}
+
+
+
+footer address{
+
+    color : gray;
+
+}
+
+
+
+footer h6{
+
+    font-family: "Baloo 2", cursive;
+    color : gray;
+    letter-spacing: 2px;
+    margin-left: 0;
+
+}
+@media(max-width:500px){
+    footer h6{
+        display: inline-block;
+        font-size : 10px;
+    }
+}
